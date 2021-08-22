@@ -1,0 +1,15 @@
+.opacity-hover-animation {
+	transition: opacity 0.3s;
+
+	&:hover {
+		opacity: 0.6;
+	}
+}
+
+.footer-link-animation {
+	transition: color 0.3s;
+
+	&:hover {
+		color: $bright-red;
+	}
+}

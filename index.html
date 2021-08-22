@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,9 +9,323 @@
 			content="Manage Landing Page, design created by frontendmentor.io recreated by Kacper B."
 		/>
 		<title>Manage Landing Page</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
+		<nav class="nav wrapper">
+			<div class="nav__shadow"></div>
+			<a href="#" class="nav__logo"
+				><img
+					src="./assets/images/logo.svg"
+					alt="manage landing page icon, back to home page"
+			/></a>
+
+			<button class="nav__burger-btn" aria-label="Mobile navigation button">
+				<div class="nav__burger-btn-container">
+					<div class="nav__burger-btn-bar"></div>
+				</div>
+			</button>
+			<ul class="nav__list nav__list--mobile">
+				<li class="nav__list-item opacity-hover-animation">
+					<a href="#">Pricing</a>
+				</li>
+				<li class="nav__list-item opacity-hover-animation">
+					<a href="#">Product</a>
+				</li>
+				<li class="nav__list-item opacity-hover-animation">
+					<a href="#">About Us</a>
+				</li>
+				<li class="nav__list-item opacity-hover-animation">
+					<a href="#">Careers</a>
+				</li>
+				<li class="nav__list-item opacity-hover-animation">
+					<a href="#">Community</a>
+				</li>
+			</ul>
+			<ul class="nav__list nav__list--desktop">
+				<li class="nav__list-item opacity-hover-animation">
+					<a href="#">Pricing</a>
+				</li>
+				<li class="nav__list-item opacity-hover-animation">
+					<a href="#">Product</a>
+				</li>
+				<li class="nav__list-item opacity-hover-animation">
+					<a href="#">About Us</a>
+				</li>
+				<li class="nav__list-item opacity-hover-animation">
+					<a href="#">Careers</a>
+				</li>
+				<li class="nav__list-item opacity-hover-animation">
+					<a href="#">Community</a>
+				</li>
+			</ul>
+			<a
+				href="#"
+				class="nav__getStarted opacity-hover-animation"
+				aria-label="Get Started with manage and learn more"
+				>Get Started</a
+			>
+		</nav>
+		<header class="header">
+			<div class="header__container wrapper">
+				<div class="header__side header__side--left">
+					<div class="header__intro">
+						<img src="./assets/images/illustration-intro.svg" alt="" />
+					</div>
+				</div>
+				<div class="header__side header__side--right">
+					<h1 class="header__title">
+						Bring everyone together to build better products.
+					</h1>
+					<p class="header__text">
+						Manage makes it simple for software teams to plan day-to-day tasks
+						while keeping the larger team goals in view.
+					</p>
+					<a
+						href="#"
+						class="header__button opacity-hover-animation"
+						aria-label="Get Started with manage and learn more"
+						>Get Started</a
+					>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="about section-padding">
+				<div class="wrapper about__container">
+					<div class="section-info">
+						<h2 class="section-title">What's diffrent about Manage?</h2>
+						<p class="section-text">
+							Manage provides all the functionality your team needs, without the
+							complexity. Our software is tailor-made for modern digital product
+							teams.
+						</p>
+					</div>
+					<div class="about__box">
+						<h3 class="about__title">
+							<span>01</span> Track company-wide progress
+						</h3>
+						<p class="about__text">
+							See how your day-to-day tasks fit into the wider vision. Go from
+							tracking progress at the milestone level all the way done to the
+							smallest of details. Never lose sight of the bigger picture again.
+						</p>
+					</div>
+					<div class="about__box">
+						<h3 class="about__title">
+							<span>02</span> Advanced built-in reports
+						</h3>
+						<p class="about__text">
+							Set internal delivery estimates and track progress toward company
+							goals. Our customisable dashboard helps you build out the reports
+							you need to keep key stakeholders informed.
+						</p>
+					</div>
+					<div class="about__box">
+						<h3 class="about__title">
+							<span>03</span> Everything you need in one place
+						</h3>
+						<p class="about__text">
+							Stop jumping from one service to another to communicate, store
+							files, track tasks and share documents. Manage offers an
+							all-in-one team productivity solution.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="testimonials section-padding">
+				<h2 class="section-title">What they've said</h2>
+
+				<div class="testimonials__container wrapper">
+					<div class="testimonials__person">
+						<img
+							src="./assets/images/avatar-ali.png"
+							alt="Girl with long dark hair looking to the right side"
+							class="testimonials__person-img"
+						/>
+						<p class="testimonials__person-name">Ali Bravo</p>
+						<p class="testimonials__person-text">
+							“We have been able to cancel so many other subscriptions since
+							using Manage. There is no more cross-channel confusion and
+							everyone is much more focused.”
+						</p>
+					</div>
+					<div class="testimonials__person">
+						<img
+							src="./assets/images/avatar-anisha.png"
+							alt="A young Asian woman with black hair and glasses hanging on her head"
+							class="testimonials__person-img"
+						/>
+						<p class="testimonials__person-name">Anisha Li</p>
+						<p class="testimonials__person-text">
+							“Manage has supercharged our team’s workflow. The ability to
+							maintain visibility on larger milestones at all times keeps
+							everyone motivated.”
+						</p>
+					</div>
+					<div class="testimonials__person">
+						<img
+							src="./assets/images/avatar-richard.png"
+							alt="Old man with long white beard and round glasses looking straight"
+							class="testimonials__person-img"
+						/>
+						<p class="testimonials__person-name">Richard Watts</p>
+						<p class="testimonials__person-text">
+							“Manage allows us to provide structure and process. It keeps us
+							organized and focused. I can’t stop recommending them to everyone
+							I talk to!”
+						</p>
+					</div>
+					<div class="testimonials__person">
+						<img
+							src="./assets/images/avatar-shanai.png"
+							alt="Girl with long dark hair wearing large black winter hat looking straight into camera"
+							class="testimonials__person-img"
+						/>
+						<p class="testimonials__person-name">Shanai Gough</p>
+						<p class="testimonials__person-text">
+							“Their software allows us to track, manage and collaborate on our
+							projects from anywhere. It keeps the whole team in-sync without
+							being intrusive.”
+						</p>
+					</div>
+				</div>
+
+				<div class="testimonials__bullets">
+					<div class="testimonials__bullets-item"></div>
+					<div
+						class="
+							testimonials__bullets-item testimonials__bullets-item--filled
+						"
+					></div>
+					<div class="testimonials__bullets-item"></div>
+					<div class="testimonials__bullets-item"></div>
+				</div>
+				<a
+					href="#"
+					class="testimonials__button opacity-hover-animation"
+					aria-label="Get Started with manage and learn more"
+					>Get Started</a
+				>
+			</section>
+			<section class="simplify section-padding">
+				<div class="simplify__container wrapper">
+					<h2 class="section-title">
+						Simplify how your team <br />
+						works today.
+					</h2>
+					<a
+						href="#"
+						aria-label="Get Started with manage and learn more"
+						class="simplify__button opacity-hover-animation"
+						>Get Started</a
+					>
+				</div>
+			</section>
+		</main>
+		<footer class="footer section-padding">
+			<div class="footer__container wrapper">
+				<form action="" class="footer__newsletter">
+					<input
+						type="text"
+						placeholder="Updates in your inbox..."
+						class="footer__newsletter-input"
+						aria-label="Insert your email adress"
+						aria-placeholder="false"
+					/>
+					<input
+						type="submit"
+						value="GO"
+						aria-label="Send your email adress"
+						class="footer__newsletter-button opacity-hover-animation"
+					/>
+				</form>
+				<div class="footer__list-box">
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a class="footer-link-animation" href="#">Home</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer-link-animation" href="#">Pricing</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer-link-animation" href="#">Products</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer-link-animation" href="#">About Us</a>
+						</li>
+					</ul>
+					<ul class="footer__list footer__list--secondary">
+						<li class="footer__list-item">
+							<a class="footer-link-animation" href="#">Careers</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer-link-animation" href="#">Community</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer-link-animation" href="#">Privacy Policy</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="footer__socials">
+					<li class="footer__socials-item opacity-hover-animation">
+						<a href="#" aria-label="Facebook fanpage"
+							><img src="./assets/icons/icon-facebook.svg" alt=""
+						/></a>
+					</li>
+					<li class="footer__socials-item opacity-hover-animation">
+						<a href="#" aria-label="Youtube channel"
+							><img src="./assets/icons/icon-youtube.svg" alt=""
+						/></a>
+					</li>
+					<li class="footer__socials-item opacity-hover-animation">
+						<a href="#" aria-label="Twitter profile"
+							><img src="./assets/icons/icon-twitter.svg" alt=""
+						/></a>
+					</li>
+					<li class="footer__socials-item opacity-hover-animation">
+						<a href="#" aria-label="Pinterest profile"
+							><img src="./assets/icons/icon-pinterest.svg" alt=""
+						/></a>
+					</li>
+					<li class="footer__socials-item opacity-hover-animation">
+						<a href="#" aria-label="Instagram profile"
+							><img src="./assets/icons/icon-instagram.svg" alt=""
+						/></a>
+					</li>
+				</ul>
+				<a href="#" class="footer__logo"
+					><img
+						src="./assets/images/logo-white.svg"
+						alt="manage landing page icon, back to home page"
+				/></a>
+				<p class="footer__text">Copyright 2020. All Rights Reserved</p>
+			</div>
+		</footer>
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-1.11.0.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
 		<script src="./js/main.js"></script>
+		<script src="./js/slick.js"></script>
 	</body>
 </html>
